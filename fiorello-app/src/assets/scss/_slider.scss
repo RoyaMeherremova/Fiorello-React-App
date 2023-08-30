@@ -1,0 +1,52 @@
+#slider {
+    .slide {
+        height: 500px;
+    }
+
+    .slide-content {
+        position: relative;
+        right: 208px;
+        color: #080808;
+        right: 51%;
+        bottom: 60px;
+
+        :nth-child(2) {
+            margin-right: 9%;
+        }
+
+        h1 {
+            font-size: 45px;
+            line-height: 51px;
+            font-family: Lora, serif;
+
+            span {
+                color: #f34f3f;
+            }
+
+
+        }
+
+        p {
+            position: relative;
+            left: 378px;
+            width: 394px;
+            font-size: 19px;
+            line-height: 34px;
+            font-family: Lora, serif;
+            color: rgb(0 0 0 / 50%) !important;
+            text-align: left;
+        }
+
+        img {
+            position: relative;
+            right: 5%;
+        }
+    }
+
+    .carousel-control-next-icon {
+        position: relative;
+        left: 36%;
+    }
+
+
+}
