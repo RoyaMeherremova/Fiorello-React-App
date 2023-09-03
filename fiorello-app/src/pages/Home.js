@@ -5,6 +5,7 @@ import Category from '../components/category/Category'
 import Product from '../components/common/Product'
 import Expert from '../components/expert/Expert'
 import Slider from '../components/slider/Slider'
+import Subscribe from '../components/subscribe/Subscribe'
 
 function Home() {
     return (
@@ -15,6 +16,7 @@ function Home() {
                 <Product />
                 <About />
                 <Expert />
+                <Subscribe />
             </main>
         </div>
     )

@@ -1,0 +1,35 @@
+#subscribe {
+    background-attachment: fixed;
+
+    h3 {
+        color: #fff;
+        font-size: 30px;
+        font-family: "Playfair Display", serif;
+    }
+
+    .content {
+        .form-group {
+            height: 60px;
+
+            input {
+                height: 100%;
+                width: 50% !important;
+                border: none;
+                font-size: 12px;
+                font-family: Montserrat, sans-serif;
+                padding: 30px !important;
+            }
+
+            a {
+                height: 100%;
+                padding: 20px !important;
+                font-size: 12px;
+                font-family: Montserrat, sans-serif;
+                letter-spacing: .1em;
+                text-transform: uppercase;
+                background-color: #f34f3f;
+                cursor: pointer;
+            }
+        }
+    }
+}
