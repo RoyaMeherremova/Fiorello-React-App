@@ -1,6 +1,7 @@
 import React from 'react'
 import '../assets/scss/_home.scss'
 import About from '../components/about/About'
+import Blog from '../components/blog/Blog'
 import Category from '../components/category/Category'
 import Product from '../components/common/Product'
 import Expert from '../components/expert/Expert'
@@ -17,6 +18,7 @@ function Home() {
                 <About />
                 <Expert />
                 <Subscribe />
+                <Blog />
             </main>
         </div>
     )

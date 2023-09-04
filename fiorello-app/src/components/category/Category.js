@@ -46,7 +46,7 @@ function Category() {
                                 </li>
                                 <li>
                                     <li>
-                                        <a> <FontAwesomeIcon style={{ marginBottom: "1px" }} icon={faCaretDown}></FontAwesomeIcon></a>
+                                        <a><FontAwesomeIcon style={{ marginBottom: "1px" }} icon={faCaretDown}></FontAwesomeIcon></a>
                                     </li>
                                 </li>
                             </ul>
