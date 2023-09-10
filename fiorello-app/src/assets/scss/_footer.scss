@@ -1,1 +1,32 @@
-#footer-up {}
+#footer-up {
+    .container {
+        max-width: 1140px !important;
+        margin-top: 5%;
+    }
+
+    .item {
+        h6 {
+            font-size: 12px;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            font-weight: 500;
+            font-family: Montserrat, sans-serif;
+            color: #212529;
+        }
+
+        ul {
+            li {
+                a {
+                    color: rgba(0, 0, 0, .5) !important;
+                    font-size: 12px;
+                    transition: color .3s;
+                    text-decoration: none;
+                    font-family: Montserrat, sans-serif;
+                    line-height: 24px;
+                    font-weight: 400;
+                }
+            }
+        }
+
+    }
+}
