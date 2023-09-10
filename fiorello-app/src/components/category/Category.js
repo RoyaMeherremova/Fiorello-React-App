@@ -54,6 +54,7 @@ function Category() {
                     </div>
                 </div>
             </section >
+
         </div >
     )
 }
