@@ -4,7 +4,7 @@ import payment from '../../assets/images/footer/footer-bottom-1.png'
 
 function Footer() {
     return (
-        <div>
+        <>
             <section id='footer-up'>
                 <div className='container'>
                     <div className='row'>
@@ -78,7 +78,7 @@ function Footer() {
                 </div>
             </section>
 
-        </div>
+        </>
     )
 }
 

@@ -1,11 +1,11 @@
 import React from 'react'
-import '../../assets/scss/_about.scss'
+import '../../assets/scss/_aboutCopm.scss'
 import photoVideo from '../../assets/images/about/h3-video-img.jpg'
 import hearth from '../../assets/images/about/h1-custom-icon.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPlay } from '@fortawesome/free-solid-svg-icons'
 
-function About() {
+function AboutComp() {
     return (
         <div>
             <section id="about">
@@ -47,4 +47,4 @@ function About() {
     )
 }
 
-export default About
+export default AboutComp
