@@ -3,10 +3,12 @@
     background-attachment: fixed;
     overflow: hidden;
     background-position: center 0px;
+    margin-bottom: 6%;
 
     .aboutDesc {
         height: 320px;
         text-align: center;
+        padding-top: 7%;
 
         p {
             &:nth-child(1) {
@@ -14,7 +16,6 @@
                 color: #0e0e0e;
                 font-family: "Playfair Display", serif;
                 font-weight: 400;
-                margin-top: 105px;
                 margin-bottom: 3px;
 
             }

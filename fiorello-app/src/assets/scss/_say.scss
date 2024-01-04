@@ -1,7 +1,14 @@
 #say {
+    .carousel-control-prev-icon {
+        display: none;
+    }
+
+    .carousel-control-nex-icon {
+        display: none;
+    }
+
     .carousel {
-        position: absolute;
-        left: 34%;
+        left: 28%;
 
     }
 
@@ -27,7 +34,6 @@
                 font-size: 12px;
                 letter-spacing: .1em;
                 text-transform: uppercase;
-
                 color: #212529;
             }
 

@@ -1,7 +1,9 @@
 import React from 'react'
 import backgroundAbout from '../assets/images/about/backgroundAbout.jpg'
 import '../assets/scss/_about.scss'
-import AboutComp from '../components/aboutComp/AboutComp'
+import Expert from '../components/expert/Expert'
+import Say from '../components/say/Say'
+import AboutVideoComp from '../components/video/AboutVideoComp'
 
 function About() {
     return (
@@ -12,7 +14,13 @@ function About() {
                     <p className='size-lg absolute'>Where flowers are our inspiration </p>
                 </div>
             </section>
-            <AboutComp />
+            <AboutVideoComp />
+            <section style={{ backgroundColor: "#f8f8f8", marginTop: "6%", paddingBottom: "2%", marginBottom: "3%" }}>
+                <Expert />
+            </section>
+
+            <Say />
+
         </>
     )
 }

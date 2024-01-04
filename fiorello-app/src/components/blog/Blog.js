@@ -19,7 +19,7 @@ function Blog() {
                             </div>
                         </div>
                     </div>
-                    <div className='row pb-5'>
+                    <div className='row'>
                         <div className='col-md-6 col-lg-4'>
                             <div className='item'>
                                 <div className='img'>

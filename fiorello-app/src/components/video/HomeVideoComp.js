@@ -1,14 +1,14 @@
 import React from 'react'
-import '../../assets/scss/_aboutCopm.scss'
-import photoVideo from '../../assets/images/about/h3-video-img.jpg'
-import hearth from '../../assets/images/about/h1-custom-icon.png'
+import '../../assets/scss/_homeVideoCopm.scss'
+import photoVideo from '../../assets/images/video/h3-video-img.jpg'
+import hearth from '../../assets/images/video/h1-custom-icon.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPlay } from '@fortawesome/free-solid-svg-icons'
 
-function AboutComp() {
+function HomeVideoComp() {
     return (
         <div>
-            <section id="about">
+            <section id="homeVideo">
                 <div className="container">
                     <div className="row py-2">
                         <div className="col-lg-6">
@@ -20,7 +20,7 @@ function AboutComp() {
                             </div>
                         </div>
                         <div className="col-lg-6">
-                            <div className="about-text">
+                            <div className="video-text">
                                 <h1>Suprise Your <span>Valentine!</span> Let us arrange a smile.</h1>
                                 <p className="py-2">Where flowers are our inspiration to create lasting memories. Whatever the
                                     occasion...</p>
@@ -47,4 +47,4 @@ function AboutComp() {
     )
 }
 
-export default AboutComp
+export default HomeVideoComp

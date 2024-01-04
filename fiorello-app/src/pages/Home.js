@@ -1,6 +1,5 @@
 import React from 'react'
 import '../assets/scss/_home.scss'
-import AboutComp from '../components/aboutComp/AboutComp'
 import Blog from '../components/blog/Blog'
 import Category from '../components/category/Category'
 import Product from '../components/common/Product'
@@ -9,6 +8,7 @@ import Instagram from '../components/instagram/Instagram'
 import Say from '../components/say/Say'
 import Slider from '../components/slider/Slider'
 import Subscribe from '../components/subscribe/Subscribe'
+import HomeVideoComp from '../components/video/HomeVideoComp'
 
 function Home() {
     return (
@@ -17,7 +17,7 @@ function Home() {
                 <Slider />
                 <Category />
                 <Product />
-                <AboutComp />
+                <HomeVideoComp />
                 <Expert />
                 <Subscribe />
                 <Blog />

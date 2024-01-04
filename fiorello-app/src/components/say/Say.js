@@ -5,9 +5,9 @@ import say1 from '../../assets/images/say/testimonial-img-1.png'
 import say2 from '../../assets/images/say/testimonial-img-2.png'
 function Say() {
     return (
-        <div>
+        <>
             <section id='say'>
-                <div className='container'>
+                <div className='container py-5'>
                     <Carousel>
                         <Carousel.Item>
                             <div className='item text-center'>
@@ -42,7 +42,7 @@ function Say() {
                 </div>
 
             </section>
-        </div>
+        </>
     )
 }
 export default Say

@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+.container {
+    min-width: 1300px !important;
+    gap: 4%;
+}
+
+
+.aboutUs {
+    width: 585px;
+
+    h1 {
+        font-family: "Playfair Display", serif;
+        color: #2b2b2b;
+        font-size: 38px;
+
+        span {
+            color: #f34f3f;
+        }
+    }
+
+    p {
+        font-size: 17px;
+        line-height: 29px;
+        margin-top: 27px;
+        color: #6d6a6a;
+        font-family: Lora, serif;
+    }
+
+    img {
+        margin-top: 4%;
+    }
+}
+
+
+
+.video-img {
+    width: 650px;
+    position: relative;
+    overflow: hidden;
+
+    img {
+        width: 100%;
+        cursor: pointer;
+
+        &:hover {
+            transform: scale(1.1);
+            transition: 0.8s;
+        }
+    }
+
+    .player {
+        width: 100px;
+        height: 100px;
+        background-color: #fff;
+        top: 34%;
+        left: 42%;
+        border-radius: 50%;
+        position: absolute;
+
+        .play {
+            color: #f34f3f;
+            position: absolute;
+            left: 45%;
+            top: 39%;
+            font-size: 21px;
+        }
+    }
+}

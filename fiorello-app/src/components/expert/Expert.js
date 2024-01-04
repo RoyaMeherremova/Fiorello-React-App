@@ -10,7 +10,7 @@ function Expert() {
     return (
         <div>
             <section id="experts">
-                <div className="container mt-5">
+                <div className="container mt-2">
                     <div className="row py-5">
                         <div className="offset-lg-3 col-lg-6">
                             <div className="section-title mt-5">
