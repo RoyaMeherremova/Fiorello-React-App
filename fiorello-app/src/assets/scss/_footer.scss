@@ -1,4 +1,7 @@
 #footer-up {
+    background-color: #fefaf3;
+    padding-top: 1%;
+
     .container {
         max-width: 1140px !important;
         margin-top: 5%;
@@ -35,12 +38,18 @@
     }
 }
 
+hr {
+    margin: auto;
+}
+
 #footer-down {
+    background-color: #fefaf3;
+    padding-top: 1%;
+
     p {
         color: rgba(0, 0, 0, .5) !important;
         font-size: 12px;
         font-family: Montserrat, sans-serif;
-
 
     }
 

@@ -1,9 +1,18 @@
-import React from 'react'
 import '../../assets/scss/_category.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCaretDown } from '@fortawesome/free-solid-svg-icons'
 
 function Category() {
+    // const [categories, setCategories] = useState([])
+
+
+    // useEffect(() => {
+    //     axios.get(`${baseURL}api/Category/GetAll`).then((response) => {
+    //         console.log(response.data);
+    //         setCategories(response.data)
+    //     })
+    // }, [])
+
     return (
         <div>
             <section id='category'>
@@ -15,6 +24,8 @@ function Category() {
                                     <a>All</a>
 
                                 </li>
+
+
                                 <li>
                                     <a>Popular</a>
 

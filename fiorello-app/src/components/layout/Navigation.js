@@ -6,6 +6,7 @@ import { faMagnifyingGlass, faBagShopping } from '@fortawesome/free-solid-svg-ic
 import { NavLink } from 'react-router-dom';
 
 function Navigation() {
+    let alText = 'photo'
     return (
         <div>
             <section id='nav-area'>
@@ -13,7 +14,7 @@ function Navigation() {
                     <div className='row'>
                         <div className='col-4'>
                             <div className='logo'>
-                                <img src={logo} />
+                                <img src={logo} alt={alText} />
                             </div>
                         </div>
                         <div className='col-6'>
@@ -49,7 +50,7 @@ function Navigation() {
                         </div>
                         <div className='col-2'>
                             <div>
-                                <a>
+                                <a href='g'>
                                     <ul className='shop-cart'>
                                         <li>
                                             <FontAwesomeIcon icon={faMagnifyingGlass} rotation={90}></FontAwesomeIcon>

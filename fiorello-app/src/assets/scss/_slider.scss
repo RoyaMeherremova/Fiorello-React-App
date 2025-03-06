@@ -15,17 +15,26 @@
             margin-right: 9%;
         }
 
-        h1 {
-            font-size: 45px;
-            line-height: 51px;
-            font-family: Lora, serif;
+        .slide-header {
+            width: 350px;
+            position: relative;
+            left: 35%;
+            text-align: left;
 
-            span {
-                color: #f34f3f;
+            h1 {
+                font-size: 45px;
+                line-height: 51px;
+                font-family: Lora, serif;
+
+                span {
+                    color: #f34f3f;
+                }
+
+
             }
-
-
         }
+
+
 
         p {
             position: relative;
@@ -36,6 +45,7 @@
             font-family: Lora, serif;
             color: rgb(0 0 0 / 50%) !important;
             text-align: left;
+            padding-top: 2%;
         }
 
         img {
