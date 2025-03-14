@@ -1,63 +1,42 @@
 #slider {
+  .slide {
+    height: 500px;
+    .slider {
+      width: 100%;
+      height: 477px;
+    }
+  }
 
-    .slide {
-        height: 500px;
+  .carousel-control-next-icon {
+    position: relative;
+    left: 36%;
+  }
+  .carousel-caption {
+    width: 429px;
+    text-align: left;
+    margin-bottom: 3.5rem;
+    h1 {
+      color: rgb(0, 0, 0);
+      font-weight: 400;
+      font-size: 41px;
+      font-family: 'Playfair Display';
     }
 
-    .slide-content {
-        position: relative;
-        right: 208px;
-        color: #080808;
-        right: 51%;
-        bottom: 60px;
-
-        :nth-child(2) {
-            margin-right: 9%;
-        }
-
-        .slide-header {
-            width: 350px;
-            position: relative;
-            left: 35%;
-            text-align: left;
-
-            h1 {
-                font-size: 45px;
-                line-height: 51px;
-                font-family: Lora, serif;
-
-                span {
-                    color: #f34f3f;
-                }
-
-
-            }
-        }
-
-
-
-        p {
-            position: relative;
-            left: 378px;
-            width: 394px;
-            font-size: 19px;
-            line-height: 34px;
-            font-family: Lora, serif;
-            color: rgb(0 0 0 / 50%) !important;
-            text-align: left;
-            padding-top: 2%;
-        }
-
-        img {
-            position: relative;
-            right: 5%;
-        }
+    .red-word {
+      color: #f34f3f;
     }
 
-    .carousel-control-next-icon {
-        position: relative;
-        left: 36%;
+    p {
+      line-height: 29px;
+      height: 89px;
+      color: rgb(109, 106, 106);
+      font-size: 17px;
+      font-family: Lora;
+      font-weight: 400;
     }
-
-
+    .logo {
+      margin-top: 17px;
+      width: 197px !important;
+    }
+  }
 }

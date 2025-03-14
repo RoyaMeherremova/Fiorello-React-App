@@ -41,7 +41,7 @@ function Home() {
             <main>
                 <Slider />
                 <Category />
-                <Product />
+                {/* <Product /> */}
                 <HomeVideoComp />
                 <Expert />
                 <Subscribe />

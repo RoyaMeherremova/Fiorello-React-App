@@ -1,53 +1,51 @@
+import React, { useState, useEffect } from 'react';
 import '../../assets/scss/_category.scss'
+import axios from "axios";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCaretDown } from '@fortawesome/free-solid-svg-icons'
 
 function Category() {
-    // const [categories, setCategories] = useState([])
+    const [categories, setCategories] = useState([]);
+    const [loading, setLoading] = useState(true);
+    const [error, setError] = useState(null);
 
+    const baseURL = "https://localhost:7292";
 
-    // useEffect(() => {
-    //     axios.get(`${baseURL}api/Category/GetAll`).then((response) => {
-    //         console.log(response.data);
-    //         setCategories(response.data)
-    //     })
-    // }, [])
+    useEffect(() => {
+        axios.get(`${baseURL}/api/Category/GetALL`)
+            .then((response) => {
+                setCategories(response.data);
+                console.log(response.data);
+                setLoading(false);
+            })
+            .catch((err) => {
+                setError('Ошибка при получении данных');
+                setLoading(false);
+            });
+    }, []);
 
     return (
         <div>
+            {error && <p className="error">{error}</p>}
+            {loading && <p className="loading">Loading...</p>}
             <section id='category'>
                 <div className='container'>
                     <div className='row'>
                         <div className='col-9'>
                             <ul>
                                 <li>
-                                    <a>All</a>
+                                    <a href=''>All</a>
 
                                 </li>
 
+                                {categories.map((item) => (
 
-                                <li>
-                                    <a>Popular</a>
+                                    <li key={item.id}>
+                                        <a>{item.name}</a>
 
-                                </li>
-                                <li>
-                                    <a> Winter</a>
+                                    </li>
 
-                                </li>
-                                <li>
-                                    <a>Various</a>
-                                </li>
-                                <li>
-                                    <a> EXOTIC</a>
-
-                                </li>
-                                <li>
-                                    <a> GREENS</a>
-
-                                </li>
-                                <li>
-                                    <a> CACTUSES</a>
-                                </li>
+                                ))}
                             </ul>
                         </div>
                         <div className='col-3'>
@@ -64,7 +62,9 @@ function Category() {
                         </div>
                     </div>
                 </div>
+
             </section >
+            {/* <Product products={products} /> */}
 
         </div >
     )

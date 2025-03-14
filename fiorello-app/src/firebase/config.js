@@ -1,26 +1,25 @@
-import firebase from 'firebase/app'
-import 'firebase/firestore'
-import 'firebase/auth'
-import 'firebase/storage'
+import { initializeApp } from 'firebase/app';
+import { getFirestore } from 'firebase/firestore';
+import { getAuth } from 'firebase/auth';
 
-// const firebaseConfig = {
-//     apiKey: "AIzaSyDXBeEYHuAA42LMCkxhdsOoYdMO2n7tgos",
-//     authDomain: "udemy-files-dojo.firebaseapp.com",
-//     projectId: "udemy-files-dojo",
-//     storageBucket: "udemy-files-dojo.appspot.com",
-//     messagingSenderId: "244633033606",
-//     appId: "1:244633033606:web:aa1833bda9c7906227ea07"
-// }
+// Ваши настройки Firebase
+const firebaseConfig = {
+    apiKey: "AIzaSyDOujcoLALLqvsXpt1poZUW3CEP_5oX564",
+    authDomain: "fiorello-app.firebaseapp.com",
+    databaseURL: "https://fiorello-app-default-rtdb.firebaseio.com",
+    projectId: "fiorello-app",
+    storageBucket: "fiorello-app.firebasestorage.app",
+    messagingSenderId: "292854282869",
+    appId: "1:292854282869:web:1f775b4f98d5fa0f28563c",
+    measurementId: "G-CGM209P3K1"
+};
 
-// init firebase
-// firebase.initializeApp(firebaseConfig)
+// Инициализация Firebase
+const app = initializeApp(firebaseConfig);
 
-// init services
-const projectFirestore = firebase.firestore()
-const projectAuth = firebase.auth()
-const projectStorage = firebase.storage()
+// Инициализация Firestore и Auth
+const projectFirestore = getFirestore(app);
+const projectAuth = getAuth(app);
 
-// timestamp
-const timestamp = firebase.firestore.Timestamp
-
-export { projectFirestore, projectAuth, timestamp, projectStorage }
+// Экспортируем их
+export { projectFirestore, projectAuth };
