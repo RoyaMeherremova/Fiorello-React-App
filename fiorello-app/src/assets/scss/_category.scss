@@ -1,40 +1,40 @@
 #category {
-    .container {
-        max-width: 1140px !important;
-    }
+  .container {
+    max-width: 1140px !important;
+  }
 
-    margin-top: 60px;
+  margin-top: 60px;
 
-    ul {
-        list-style: none;
-        display: flex;
-        gap: 5%;
-        padding: 0px;
+  ul {
+    list-style: none;
+    display: flex;
+    gap: 5%;
+    padding: 0px;
 
+    li {
+      button {
+        border: none;
+        background: none;
+        text-transform: uppercase;
+        -webkit-transition: color 0.3s;
+        transition: color 0.3s;
+        font-size: 12px;
+        letter-spacing: 0.1em;
+        color: black;
+        cursor: pointer;
+        text-decoration: none;
+        font-family: Montserrat, sans-serif;
+        line-height: 24px;
+        font-weight: 400;
 
-        li {
-
-            a {
-                text-transform: uppercase;
-                -webkit-transition: color .3s;
-                transition: color .3s;
-                font-size: 12px;
-                letter-spacing: .1em;
-                color: black;
-                cursor: pointer;
-                text-decoration: none;
-                font-family: Montserrat, sans-serif;
-                line-height: 24px;
-                font-weight: 400;
-
-                i {
-                    margin-bottom: 1px;
-                }
-            }
+        i {
+          margin-bottom: 1px;
         }
+      }
     }
+  }
 
-    .filter {
-        margin-left: 71%;
-    }
+  .filter {
+    margin-left: 71%;
+  }
 }

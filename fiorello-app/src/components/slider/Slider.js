@@ -50,9 +50,6 @@ function Slider() {
                 </Carousel.Item>))}
             </Carousel>
 
-
-
-
         </section>
 
     );
