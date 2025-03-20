@@ -12,6 +12,8 @@ function Category() {
     const [error, setError] = useState(null);
     const [selectedCategoryId, setSelectedCategoryId] = useState(null);
     const [sortOrder, setSortOrder] = useState('low-to-high');
+    const [min, setMinPrice] = useState(null);
+    const [max, setMaxPrice] = useState(null);
 
     const baseURL = "https://localhost:7292";
 
@@ -21,7 +23,7 @@ function Category() {
                 setCategories(response.data);
             })
             .catch((err) => {
-                setError('Ошибка при получении категорий');
+                setError('Error retrieving categories');
             });
     }, []);
 
@@ -41,7 +43,7 @@ function Category() {
                     setLoading(false);
                 })
                 .catch((err) => {
-                    setError('Ошибка при получении продуктов для выбранной категории');
+                    setError('Error retrieving products for the selected category');
                     setLoading(false);
                 });
         } else {
@@ -63,6 +65,22 @@ function Category() {
         }
     }, [selectedCategoryId, sortOrder]);
 
+
+    useEffect(() => {
+        if (min !== null && max !== null) {
+            setLoading(true);
+
+            axios.get(`${baseURL}/api/Product/GetProductsByPriceRange?minPrice=${min}&maxPrice=${max}`)
+                .then((response) => {
+                    setProducts(response.data);
+                    setLoading(false);
+                })
+                .catch((err) => {
+                    setError('Error loading products by price');
+                    setLoading(false);
+                });
+        }
+    }, [min, max]);
     const handleCategorySelect = (id) => {
         setSelectedCategoryId(id);
     };
@@ -74,7 +92,11 @@ function Category() {
     const handleSortHighToLow = () => {
         setSortOrder('high-to-low');
     };
-
+    const handlePriceRangeSelect = (range) => {
+        const [min, max] = range.split('-').map(price => parseInt(price.replace('$', ''), 10));
+        setMinPrice(min);
+        setMaxPrice(max);
+    };
     return (
         <div>
             {error && <p className="error">{error}</p>}
@@ -107,7 +129,7 @@ function Category() {
                                 </ul>
                                 <div className='filter-container'>
                                     <div className='filters'>
-                                        <h5>Сортировать по</h5>
+                                        <h5>Sort by</h5>
                                         <ul>
                                             <li onClick={handleSortLowToHigh}>Price: To High</li>
                                             <li onClick={handleSortHighToLow}>Price: To Low</li>
@@ -116,9 +138,9 @@ function Category() {
                                     <div className='ordering-inner'>
                                         <h5>Price Range</h5>
                                         <ul>
-                                            <li>$100-$200</li>
-                                            <li>$200-$300</li>
-                                            <li>$300-$400</li>
+                                            <li onClick={() => handlePriceRangeSelect('$100-$200')}>$100-$200</li>
+                                            <li onClick={() => handlePriceRangeSelect('$200-$300')}>$200-$300</li>
+                                            <li onClick={() => handlePriceRangeSelect('$300-$400')}>$300-$400</li>
                                         </ul>
                                     </div>
                                 </div>
