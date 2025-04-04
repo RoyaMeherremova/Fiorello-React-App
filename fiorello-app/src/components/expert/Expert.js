@@ -1,14 +1,31 @@
-import React from 'react'
 import '../../assets/scss/_expert.scss'
-import expert1 from '../../assets/images/expert/h3-team-img-1.png'
-import expert2 from '../../assets/images/expert/h3-team-img-2.png'
-import expert3 from '../../assets/images/expert/h3-team-img-3.png'
-import expert4 from '../../assets/images/expert/h3-team-img-4.png'
-
+import React, { useState, useEffect } from 'react';
+import '../../assets/scss/_expert.scss'
+import axios from 'axios';
 
 function Expert() {
+    const [experts, setExpert] = useState([]);
+    const [loading, setLoading] = useState(true);
+    const [error, setError] = useState(null);
+    const baseURL = "https://localhost:7292";
+
+
+
+    useEffect(() => {
+        axios.get(`${baseURL}/api/Expert/GetALL`)
+            .then((response) => {
+                setExpert(response.data);
+                setLoading(false);
+            })
+            .catch((err) => {
+                setError('Error retrieving categories');
+            });
+    }, []);
+
     return (
         <div>
+            {error && <p className="error">{error}</p>}
+            {loading && <p className="loading">Loading...</p>}
             <section id="experts">
                 <div className="container mt-2">
                     <div className="row py-5">
@@ -22,50 +39,23 @@ function Expert() {
                         </div>
                     </div>
                     <div className="row pb-5">
-                        <div className="col-md-6 col-lg-3">
-                            <div className="item text-center">
-                                <div className="img">
-                                    <img src={expert1} />
+
+                        {experts.map((item) => {
+                            const mainImage = item.images.find((img) => img.ismain)?.image || "default.jpg";
+                            return (
+                                <div className="col-md-6 col-lg-3" key={item.id}>
+                                    <div className="item text-center">
+                                        <div className="img">
+                                            <img src={mainImage} alt={item.name} />
+                                        </div>
+                                        <div className="text mt-3">
+                                            <h6>g</h6>
+                                            <p>f</p>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div className="text mt-3">
-                                    <h6>CRYSTAL BROOKS</h6>
-                                    <p>Florist</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-md-6 col-lg-3">
-                            <div className="item text-center">
-                                <div className="img">
-                                    <img src={expert2} />
-                                </div>
-                                <div className="text mt-3">
-                                    <h6>SHIRLEY HARRIS</h6>
-                                    <p>Manager</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-md-6 col-lg-3">
-                            <div className="item text-center">
-                                <div className="img">
-                                    <img src={expert3} />
-                                </div>
-                                <div className="text mt-3">
-                                    <h6>BEVERLY CLARK</h6>
-                                    <p>Florist</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-md-6 col-lg-3">
-                            <div className="item text-center">
-                                <div className="img">
-                                    <img src={expert4} />
-                                </div>
-                                <div className="text mt-3">
-                                    <h6>AMANDA WATKINS</h6>
-                                    <p>Florist</p>
-                                </div>
-                            </div>
-                        </div>
+                            );
+                        })}
                     </div>
                 </div>
             </section>

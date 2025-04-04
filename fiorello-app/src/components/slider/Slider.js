@@ -17,7 +17,7 @@ function Slider() {
                 setLoading(false);
             })
             .catch((err) => {
-                setError('Ошибка при получении данных');
+                setError('Error retrieving sliders');
                 setLoading(false);
             });
     }, []);
@@ -37,7 +37,7 @@ function Slider() {
                     />
                     <Carousel.Caption>
                         <div key={index}>
-                            <h1>{item.title.split(" ").map((word, index) => (word.toLowerCase() === "flowers" ? (<span key={index} className='red-word'>{word} </span>) : (word + " ")))}</h1>
+                            <h1>{item.title.split(" ").map((word, index) => (word.toLowerCase() === "flowers" ? (<span key={index} className='red-word'>{word}</span>) : (word + " ")))}</h1>
                             <p>{item.description}</p>
                             <img
                                 className="d-block w-100 logo"
