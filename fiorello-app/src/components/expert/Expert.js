@@ -18,7 +18,7 @@ function Expert() {
                 setLoading(false);
             })
             .catch((err) => {
-                setError('Error retrieving categories');
+                setError('Error retrieving experts');
             });
     }, []);
 
@@ -41,16 +41,15 @@ function Expert() {
                     <div className="row pb-5">
 
                         {experts.map((item) => {
-                            const mainImage = item.images.find((img) => img.ismain)?.image || "default.jpg";
                             return (
                                 <div className="col-md-6 col-lg-3" key={item.id}>
                                     <div className="item text-center">
                                         <div className="img">
-                                            <img src={mainImage} alt={item.name} />
+                                            <img src={item.image} alt={item.name} />
                                         </div>
                                         <div className="text mt-3">
-                                            <h6>g</h6>
-                                            <p>f</p>
+                                            <h6>{item.name}</h6>
+                                            <p>{item.position}</p>
                                         </div>
                                     </div>
                                 </div>
