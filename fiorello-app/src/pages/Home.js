@@ -1,4 +1,4 @@
-// import React, { useState, useEffect } from 'react'
+import React from 'react'
 import '../assets/scss/_home.scss'
 import Blog from '../components/blog/Blog'
 import Category from '../components/category/Category'

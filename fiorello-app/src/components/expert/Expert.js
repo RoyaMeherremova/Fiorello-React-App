@@ -1,10 +1,9 @@
-import '../../assets/scss/_expert.scss'
 import React, { useState, useEffect } from 'react';
-import '../../assets/scss/_expert.scss'
 import axios from 'axios';
-
+import '../../assets/scss/_expert.scss'
 function Expert() {
     const [experts, setExpert] = useState([]);
+    const [headerBackgrounds, setHeaderBackgrounds] = useState([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
     const baseURL = "https://localhost:7292";
@@ -21,7 +20,18 @@ function Expert() {
                 setError('Error retrieving experts');
             });
     }, []);
+    useEffect(() => {
+        axios.get(`${baseURL}/api/HeaderBackground/GetALL`)
+            .then((response) => {
+                setHeaderBackgrounds(response.data);
+                setLoading(false);
+            })
+            .catch((err) => {
+                setError('Error retrieving HeaderBackgrounds');
+            });
+    }, []);
 
+    const filteredData = headerBackgrounds.filter(item => item.key === 'Expert');
     return (
         <div>
             {error && <p className="error">{error}</p>}
@@ -30,12 +40,14 @@ function Expert() {
                 <div className="container mt-2">
                     <div className="row py-5">
                         <div className="offset-lg-3 col-lg-6">
-                            <div className="section-title mt-5">
-                                <h1>Flower Experts</h1>
-                                <p>A perfect blend of creativity, energy, communication, happiness and
-                                    love. Let us arrange
-                                    a smile for you.</p>
-                            </div>
+                            {filteredData.length > 0 &&
+                                filteredData.map((item, index) => (
+                                    <div className="section-title mt-5">
+                                        <h1 key={index}>{item.value}</h1>
+                                        <p key={index}>{item.description}</p>
+                                    </div>
+                                ))
+                            }
                         </div>
                     </div>
                     <div className="row pb-5">

@@ -1,8 +1,21 @@
-import React from 'react'
-import '../../assets/scss/_footer.scss'
-import payment from '../../assets/images/footer/footer-bottom-1.png'
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
+import '../../assets/scss/_footer.scss';
 
 function Footer() {
+    const [settings, setSettings] = useState([]);
+    const baseURL = "https://localhost:7292";
+
+    useEffect(() => {
+        axios.get(`${baseURL}/api/Setting/GetALL`)
+            .then((response) => {
+                setSettings(response.data);
+            });
+    }, []);
+
+    const filteredData1 = settings.filter(item => item.key === 'Owner');
+    const filteredData2 = settings.filter(item => item.key === 'Pay');
+
     return (
         <>
             <section id='footer-up'>
@@ -57,29 +70,32 @@ function Footer() {
                             </div>
                         </div>
                     </div>
-                    <hr></hr>
+                    <hr />
                 </div>
             </section>
 
             <section id='footer-down'>
                 <div className='container'>
                     <div className='row py-2'>
-                        <div className=' col-lg-4 text-center text-lg-left'>
-                            <p>Powered by <a>Roya Maharramova</a> 2023</p>
+                        <div className='col-lg-4 text-center text-lg-left'>
+                            {filteredData1.length > 0 && filteredData1.map((item, index) => (
+                                <p key={index}>{item.value}</p>
+                            ))}
                         </div>
-                        <div className=' col-lg-4 text-center'>
-                            <img src={payment} />
+                        <div className='col-lg-4 text-center'>
+                            {filteredData2.length > 0 && filteredData2.map((item, index) => (
+                                <img key={index} src={item.value} alt="Payment" />
+                            ))}
                         </div>
-                        <div className=' col-lg-4 text-center text-lg-right mt-3 mt-lg-0'>
-                            <a className='text  mr-5' href='https://www.linkedin.com/in/roya-maharramova-b28714284/'>LINKEDIN</a>
-                            <a className='text'>FACEBOOK</a>
+                        <div className='col-lg-4 text-center text-lg-right mt-3 mt-lg-0'>
+                            <a className='text mr-5' href='https://www.linkedin.com/in/roya-maharramova-b28714284/'>LINKEDIN</a>
+                            <a className='text' href='https://www.facebook.com'>FACEBOOK</a>
                         </div>
                     </div>
                 </div>
             </section>
-
         </>
-    )
+    );
 }
 
-export default Footer
+export default Footer;
