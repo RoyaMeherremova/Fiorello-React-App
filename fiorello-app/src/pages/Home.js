@@ -1,6 +1,6 @@
 import React from 'react'
 import '../assets/scss/_home.scss'
-import Blog from '../components/blog/Blog'
+import BlogSection from '../components/blog/BlogSection'
 import Category from '../components/category/Category'
 import Expert from '../components/expert/Expert'
 import Instagram from '../components/instagram/Instagram'
@@ -18,7 +18,7 @@ function Home() {
                 <HomeVideoComp />
                 <Expert />
                 <Subscribe />
-                <Blog />
+                <BlogSection />
                 <Say />
                 <Instagram />
             </main>

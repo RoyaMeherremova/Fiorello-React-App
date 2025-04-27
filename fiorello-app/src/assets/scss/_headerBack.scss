@@ -1,0 +1,17 @@
+.header {
+  text-align: center;
+  background-color: #fafaf9;
+  height: 225px;
+  padding: 50px;
+  text-align: center;
+  .title {
+    color: #212529;
+    font-family: 'Playfair Display', serif;
+  }
+  .subtitle {
+    font-family: Lora, serif;
+    font-size: 17px;
+    font-style: italic;
+    color: #6d6a6a;
+  }
+}

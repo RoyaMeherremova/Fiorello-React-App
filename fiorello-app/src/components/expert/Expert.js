@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import '../../assets/scss/_expert.scss'
+import HaederBackground from '../HeaderBackground';
 function Expert() {
     const [experts, setExpert] = useState([]);
     const [headerBackgrounds, setHeaderBackgrounds] = useState([]);
@@ -42,10 +43,7 @@ function Expert() {
                         <div className="offset-lg-3 col-lg-6">
                             {filteredData.length > 0 &&
                                 filteredData.map((item, index) => (
-                                    <div className="section-title mt-5">
-                                        <h1 key={index}>{item.value}</h1>
-                                        <p key={index}>{item.description}</p>
-                                    </div>
+                                    <HaederBackground value={item.value} desc={item.description} />
                                 ))
                             }
                         </div>

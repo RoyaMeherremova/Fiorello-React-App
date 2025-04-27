@@ -14,7 +14,6 @@ function Category() {
     const [sortOrder, setSortOrder] = useState('low-to-high');
     const [min, setMinPrice] = useState(null);
     const [max, setMaxPrice] = useState(null);
-
     const baseURL = "https://localhost:7292";
 
     useEffect(() => {
@@ -147,11 +146,8 @@ function Category() {
                             </div>
                         </div>
                     </div>
-                    <div id="product-container">
-                        <div className='product-list'>
-                            <Product products={products} />
-                        </div>
-                    </div>
+
+                    <Product products={products.slice(0, 4)} />
                 </div>
             </section>
         </div>

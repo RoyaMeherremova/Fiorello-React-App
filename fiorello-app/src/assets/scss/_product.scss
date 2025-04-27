@@ -1,8 +1,12 @@
 #products {
-  .container {
-    max-width: 1140px;
+  .product-content {
+    max-width: 600px;
   }
 
+  .product-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
   .product {
     margin-bottom: 75px;
     width: 295px;
@@ -22,7 +26,7 @@
         display: block;
 
         &:hover {
-          transform: scale(1.05);
+          transform: scale(1.03);
         }
       }
     }

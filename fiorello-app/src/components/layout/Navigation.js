@@ -3,6 +3,7 @@ import logo from '../../assets/images/navigation/logo.png'
 import '../../assets/scss/_navigation.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMagnifyingGlass, faBagShopping } from '@fortawesome/free-solid-svg-icons'
+import { FaRegUser } from "react-icons/fa";
 import { NavLink } from 'react-router-dom';
 
 function Navigation() {
@@ -50,19 +51,31 @@ function Navigation() {
                         </div>
                         <div className='col-2'>
                             <div>
-                                <a href='g'>
-                                    <ul className='shop-cart'>
-                                        <li>
-                                            <FontAwesomeIcon icon={faMagnifyingGlass} rotation={90}></FontAwesomeIcon>
-                                        </li>
-                                        <li>
-                                            <FontAwesomeIcon icon={faBagShopping}></FontAwesomeIcon>
-                                            <span className='count-shopProducts'>0</span>
-                                        </li>
-                                        <li><span>Cart</span><span className='total-price'>($0)</span></li>
-                                    </ul>
-                                </a>
+                                <ul className='shop-cart'>
+                                    <div className="user-wrapper" >
+                                        <li><FaRegUser className='user' style={{ fontSize: '20px', marginBottom: '3px' }} /></li>
+                                    </div>
+
+                                    <li>
+                                        <FontAwesomeIcon icon={faMagnifyingGlass} rotation={90}></FontAwesomeIcon>
+                                    </li>
+                                    <li>
+                                        <FontAwesomeIcon icon={faBagShopping}></FontAwesomeIcon>
+                                        <span className='count-shopProducts'>0</span>
+                                    </li>
+                                    <li><span>Cart</span><span className='total-price'>($0)</span></li>
+                                </ul>
+
+
                             </div>
+                            <div className='user-wrapper'>
+                                <div className='log-reg'>
+                                    <NavLink to="Login">Login
+                                    </NavLink><span>/</span>
+                                    <NavLink to="Login">
+                                        Register
+                                    </NavLink></div></div>
+
                         </div>
                     </div>
                 </div>
