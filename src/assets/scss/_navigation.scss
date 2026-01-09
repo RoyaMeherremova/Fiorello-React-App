@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+#nav-area {
+  .container {
+    max-width: 1140px !important;
+  }
+
+  .logo {
+    padding-left: 95px;
+
+    img {
+      width: 205px;
+      height: 25px;
+    }
+  }
+
+  .navigate {
+    display: flex;
+    list-style: none;
+    gap: 70px;
+
+    li {
+      position: relative;
+
+      a {
+        font-size: 12px;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        color: black !important;
+        font-weight: 500;
+        font-family: Montserrat, sans-serif;
+        cursor: pointer;
+        text-decoration: none;
+      }
+    }
+  }
+
+  .shop-cart {
+    position: absolute;
+    margin-left: 27px;
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    cursor: pointer;
+    letter-spacing: 0.1em;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: black !important;
+    font-weight: 500;
+    font-family: Montserrat, sans-serif;
+
+    .count-shopProducts {
+      width: 15px;
+      height: 18px;
+      line-height: 19px;
+      font-size: 12px;
+      text-align: center;
+      border-radius: 50%;
+      font-weight: 700;
+      color: #fff;
+      background-color: #ef3636;
+      display: inline-block;
+      position: absolute;
+      top: -1px;
+      left: 117px;
+    }
+  }
+}
+.log-out {
+  width: 167px;
+  height: 47px;
+  margin-left: 18px;
+  margin-top: 28px;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #bcbcbc;
+  padding: 3px;
+  border-radius: 21px;
+  padding: 8px;
+  .logout-btn {
+    border: none;
+    border-radius: 10px;
+    width: 37px;
+    background-color: #e2adad;
+    position: relative;
+    left: 5%;
+    bottom: 1px;
+  }
+}
+.log-in {
+  width: 124px;
+  height: 47px;
+  margin-left: 18px;
+  margin-top: 28px;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #bcbcbc;
+  padding: 3px;
+  border-radius: 21px;
+  padding: 8px;
+  a {
+    text-decoration: none;
+    color: #6c757d;
+
+    &:hover {
+      color: #ef3636;
+    }
+  }
+}
+// .user-wrapper {
+//   position: relative;
+
+//   span {
+//     color: #6c757d;
+//   }
+// }
+
+// &:hover .log-reg {
+//   display: block;
+// }
+
+.user-wrapper {
+  tab-index: 0;
+}

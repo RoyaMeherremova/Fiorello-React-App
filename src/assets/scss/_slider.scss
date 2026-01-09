@@ -1,0 +1,42 @@
+#slider {
+  .slide {
+    height: 500px;
+    .slider {
+      width: 100%;
+      height: 477px;
+    }
+  }
+
+  .carousel-control-next-icon {
+    position: relative;
+    left: 36%;
+  }
+  .carousel-caption {
+    width: 429px;
+    text-align: left;
+    margin-bottom: 3.5rem;
+    h1 {
+      color: rgb(0, 0, 0);
+      font-weight: 400;
+      font-size: 41px;
+      font-family: 'Playfair Display';
+    }
+
+    .red-word {
+      color: #f34f3f;
+    }
+
+    p {
+      line-height: 29px;
+      height: 89px;
+      color: rgb(109, 106, 106);
+      font-size: 17px;
+      font-family: Lora;
+      font-weight: 400;
+    }
+    .logo {
+      margin-top: 17px;
+      width: 197px !important;
+    }
+  }
+}

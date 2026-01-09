@@ -1,0 +1,63 @@
+#instagram-carousel {
+  position: relative;
+  margin-top: 2%;
+
+  .img {
+    position: relative;
+    width: 380px !important;
+    height: 380px;
+    cursor: pointer;
+  }
+
+  .instagram-item {
+    position: relative;
+
+    a {
+      position: absolute;
+      top: 52%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      transition: opacity 0.3s;
+      color: #fff;
+      font-size: 28px;
+      opacity: 0;
+      text-decoration: none;
+    }
+
+    &:hover {
+      a {
+        opacity: 1;
+      }
+    }
+  }
+
+  .logo {
+    position: absolute;
+    z-index: 2;
+    color: #6c757d !important;
+    background-color: #f8f9fa !important;
+    top: 47%;
+    left: 46%;
+    letter-spacing: 0.2em;
+  }
+}
+.instagram {
+  overflow-x: hidden; // horizontal scrollu gizlədir
+}
+.owl-carousel {
+  .owl-stage-outer {
+    height: 383px !important;
+
+    .owl-stage {
+      .owl-item {
+        width: 382px !important;
+        margin-right: 0px !important;
+      }
+    }
+  }
+
+  .owl-nav,
+  .owl-dots {
+    display: none;
+  }
+}

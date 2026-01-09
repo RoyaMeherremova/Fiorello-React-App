@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+#homeVideo {
+  background-color: #f8f8f8;
+  padding-top: 120px !important;
+  padding-bottom: 120px !important;
+
+  .container {
+    max-width: 1140px !important;
+  }
+
+  .img {
+    position: relative;
+    overflow: hidden;
+
+    img {
+      width: 540px;
+      height: 349px;
+      cursor: pointer;
+
+      &:hover {
+        transform: scale(1.1);
+        transition: 0.8s;
+      }
+    }
+
+    .player {
+      width: 100px;
+      height: 100px;
+      background-color: #fff;
+      top: 34%;
+      left: 35%;
+      border-radius: 50%;
+      position: absolute;
+
+      .play {
+        color: #f34f3f;
+        position: absolute;
+        left: 45%;
+        top: 39%;
+        font-size: 21px;
+      }
+    }
+  }
+
+  .video-text {
+    width: 430px;
+    margin-left: 8%;
+
+    h1 {
+      font-family: 'Playfair Display', serif;
+      .red-word {
+        color: #f34f3f;
+        display: inline-block;
+      }
+    }
+
+    p {
+      font-family: Lora, serif;
+      font-size: 17px;
+      line-height: 29px;
+    }
+
+    ul {
+      li {
+        font-family: Lora, serif;
+        font-size: 17px;
+        line-height: 29px;
+        font-weight: 400;
+        color: #212529;
+        margin-top: 1rem !important;
+
+        .mr-2 {
+          margin-right: 0.5rem !important;
+        }
+      }
+    }
+  }
+}

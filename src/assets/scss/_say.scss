@@ -1,0 +1,48 @@
+#say {
+    .carousel-control-prev-icon {
+        display: none;
+    }
+
+    .carousel-control-nex-icon {
+        display: none;
+    }
+
+    .carousel {
+        left: 28%;
+
+    }
+
+    .item {
+        width: 540px;
+        height: 285px;
+
+        .text {
+            i {
+                font-family: Lora, serif;
+                font-size: 24px;
+                line-height: 1.5em;
+                font-style: italic;
+                color: #6c757d !important;
+                font-weight: 400;
+            }
+        }
+
+        .author {
+            font-family: Montserrat, sans-serif;
+
+            h6 {
+                font-size: 12px;
+                letter-spacing: .1em;
+                text-transform: uppercase;
+                color: #212529;
+            }
+
+            p {
+                color: rgba(0, 0, 0, .5) !important;
+                font-size: 12px;
+                line-height: 24px;
+                font-weight: 400;
+            }
+        }
+    }
+}

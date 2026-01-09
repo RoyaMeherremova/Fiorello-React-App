@@ -1,0 +1,68 @@
+#blog {
+  .navlink {
+    color: #90cdf4; /* Açıq göy */
+    text-decoration: none;
+  }
+  .container {
+    max-width: 1140px !important;
+  }
+
+  .item {
+    .img {
+      cursor: pointer;
+      position: relative;
+      overflow: hidden;
+      display: inline-block;
+
+      img {
+        width: 350px;
+        height: 223px;
+        transition: transform 0.3s;
+
+        &:hover {
+          transform: scale(1.05);
+        }
+      }
+
+      span {
+        cursor: pointer;
+        font-size: 10px;
+        letter-spacing: 0.15em;
+        -webkit-transition: color 0.3s;
+        transition: color 0.3s;
+        font-family: Montserrat, sans-serif;
+        position: absolute;
+        top: 5%;
+        left: 3%;
+        padding: 2%;
+        background-color: #f8f9fa !important;
+        border-radius: 0.25rem !important;
+
+        &:hover {
+          color: #f34f3f;
+        }
+      }
+    }
+
+    .text {
+      padding: 6%;
+
+      h5 {
+        cursor: pointer;
+        font-size: 22px;
+        color: #212529;
+        font-weight: 500;
+        font-family: 'Playfair Display', serif;
+        font-weight: 500;
+      }
+
+      p {
+        font-size: 15px;
+        font-family: Lora, serif;
+        line-height: 29px;
+        text-align: center;
+        color: rgba(0, 0, 0, 0.5) !important;
+      }
+    }
+  }
+}

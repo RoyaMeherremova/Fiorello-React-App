@@ -1,0 +1,124 @@
+.layout-menu {
+  background-color: #bca9bf;
+  color: #ecf0f1;
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+
+  .app-brand {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #9f86a7;
+    .app-brand-link {
+      text-decoration: none;
+      color: #ecf0f1;
+      font-size: 18px;
+      font-weight: bold;
+
+      .app-brand-logo {
+        width: 40px;
+        height: 40px;
+      }
+
+      .app-brand-text {
+        font-size: 18px;
+        font-weight: bold;
+        margin-left: 10px;
+      }
+    }
+  }
+
+  .menu-inner {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+
+    .menu-item {
+      position: relative;
+
+      &.active > .menu-link {
+        background-color: #8c9392;
+        color: #fff;
+
+        .menu-icon {
+          color: #fff;
+        }
+      }
+
+      .menu-link {
+        display: flex;
+        align-items: center;
+        padding: 15px 20px;
+        text-decoration: none;
+        color: #ecf0f1;
+        font-size: 16px;
+        transition: background-color 0.3s;
+
+        &:hover {
+          background-color: #a64dad;
+        }
+
+        .menu-icon {
+          margin-right: 10px;
+        }
+      }
+
+      .menu-toggle {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        padding: 15px 20px;
+        font-size: 16px;
+        color: #ecf0f1;
+        transition: background-color 0.3s;
+
+        &:hover {
+          background-color: #a64dad;
+        }
+
+        .menu-icon {
+          margin-right: 10px;
+        }
+      }
+
+      .menu-sub {
+        display: none;
+        list-style-type: none;
+        padding-left: 20px;
+
+        .menu-item {
+          padding: 10px 20px;
+
+          .menu-link {
+            font-size: 14px;
+            color: #bdc3c7;
+
+            &:hover {
+              background-color: #1abc9c;
+            }
+          }
+        }
+      }
+
+      &.open .menu-sub {
+        display: block;
+      }
+    }
+  }
+}
+
+// Стиль для скрытого и раскрытого меню
+.menu-item.open > .menu-link {
+  background-color: #1abc9c;
+  color: #fff;
+}
+
+.menu-item.open > .menu-link .menu-icon {
+  color: #fff;
+}

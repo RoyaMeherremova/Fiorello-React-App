@@ -1,0 +1,41 @@
+.avatar {
+  position: relative;
+  &.avatar-online::after,
+  &.avatar-offline::after,
+  &.avatar-away::after,
+  &.avatar-busy::after {
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 2px #fff;
+  }
+
+  &.avatar-online::after {
+    background-color: #71dd37; // Yaşıl
+  }
+
+  &.avatar-offline::after {
+    background-color: #ccc; // Boz
+  }
+
+  &.avatar-away::after {
+    background-color: #ffab00; // Sarı
+  }
+
+  &.avatar-busy::after {
+    background-color: #ff3e1d; // Qırmızı
+  }
+}
+.navbar-nav-right {
+  margin-left: 81%;
+  gap: 7px;
+}
+.nav-item {
+  align-items: center;
+  gap: 7px;
+  h4 {
+    margin: 0px;
+  }
+}

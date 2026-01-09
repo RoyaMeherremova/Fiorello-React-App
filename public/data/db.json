@@ -1,0 +1,355 @@
+{
+  "sliders": [
+    {
+      "id": 1,
+      "title": "Send flowers like you mean it.",
+      "description": "Where flowers are our inspiration to create lasting memories. Whatever the occasion, our flowers will make it special.",
+      "image": "/images/slider/h3-slider-background-3.jpg",
+      "signatureImage": "/images/slider/h2-sign-img.png"
+    },
+    {
+      "id": 2,
+      "title": "Brighten someone's day.",
+      "description": "Flowers are perfect for every occasion and mood. Let your loved ones feel special.",
+      "image": "/images/slider/h3-slider-background.jpg",
+      "signatureImage": "/images/slider/h2-sign-img.png"
+    },
+    {
+      "id": 3,
+      "title": "Fresh blooms delivered.",
+      "description": "We hand-pick and deliver fresh flowers to ensure smiles all around.",
+      "image": "/images/slider/h3-slider-background-2.jpg",
+      "signatureImage": "/images/slider/h2-sign-img.png"
+    }
+  ],
+
+  "categories": [
+    { "id": 1, "name": "Popular" },
+    { "id": 2, "name": "Cactuses" },
+    { "id": 3, "name": "Exotic" },
+    { "id": 4, "name": "Greens" },
+    { "id": 5, "name": "Various" }
+  ],
+
+  "products": [
+    {
+      "id": 1,
+      "name": "Rock Soapwort",
+      "price": 259.0,
+      "image": "/images/product/shop-9-img.jpg",
+      "categoryId": 2,
+      "SKU": "RS-001",
+      "Description": "Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc."
+    },
+    {
+      "id": 2,
+      "name": "Wild Cactus",
+      "price": 159.0,
+      "image": "/images/product/shop-5-img.jpg",
+      "categoryId": 2,
+      "SKU": "WC-002",
+      "Description": "Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc."
+    },
+    {
+      "id": 3,
+      "name": "Wild Roses",
+      "price": 259.0,
+      "image": "/images/product/shop-7-img.jpg",
+      "categoryId": 3,
+      "SKU": "WR-003",
+      "Description": "Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc."
+    },
+    {
+      "id": 4,
+      "name": "Summer Savory",
+      "price": 350.0,
+      "image": "/images/product/shop-8-img.jpg",
+      "categoryId": 4,
+      "SKU": "SS-004",
+      "Description": "Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc."
+    },
+    {
+      "id": 5,
+      "name": "Orange Amaryllis",
+      "price": 259.0,
+      "image": "/images/product/shop-12-img.jpg",
+      "categoryId": 3,
+      "SKU": "OA-005",
+      "Description": "Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc."
+    },
+    {
+      "id": 6,
+      "name": "Pink Flower Tree",
+      "price": 350.0,
+      "image": "/images/product/shop-11-img.jpg",
+      "categoryId": 4,
+      "SKU": "PFT-006",
+      "Description": "Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc."
+    },
+    {
+      "id": 7,
+      "name": "Schefflera",
+      "price": 350.0,
+      "image": "/images/product/shop-14-img.jpg",
+      "categoryId": 4,
+      "SKU": "SCH-007",
+      "Description": "Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc."
+    },
+    {
+      "id": 8,
+      "name": "Cactus In Orange",
+      "price": 180.0,
+      "image": "/images/product/shop-3-img.jpg",
+      "categoryId": 5,
+      "SKU": "CIO-008",
+      "Description": "Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc."
+    },
+    {
+      "id": 9,
+      "name": "Summer Savory",
+      "price": 370.0,
+      "image": "/images/product/shop-12-img.jpg",
+      "categoryId": 5,
+      "SKU": "SS-009",
+      "Description": "Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc."
+    },
+    {
+      "id": 10,
+      "name": "Foxglove Flower",
+      "price": 180.0,
+      "image": "/images/product/shop-13-img.jpg",
+      "categoryId": 6,
+      "SKU": "FF-010",
+      "Description": "Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc."
+    },
+    {
+      "id": 11,
+      "name": "Summer Savory",
+      "price": 280.0,
+      "image": "/images/product/shop-10-img.jpg",
+      "categoryId": 6,
+      "SKU": "SS-011",
+      "Description": "Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc."
+    },
+    {
+      "id": 12,
+      "name": "Rock Soapwort",
+      "price": 259.0,
+      "image": "/images/product/shop-9-img.jpg",
+      "categoryId": 1,
+      "SKU": "RS-012",
+      "Description": "Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc."
+    }
+  ],
+  "videos": [
+    {
+      "id": 1,
+      "title": "Suprise Your Valentine! Let us arrange a smile.",
+      "description": "Where flowers are our inspiration to create lasting memories. Whatever the occasion...",
+      "image": "/images/video/h3-video-img.jpg",
+      "createdDate": "2025-03-13T00:00:00",
+      "updatedDate": "2025-03-13T00:00:00",
+      "isDeleted": false
+    }
+  ],
+
+  "experts": [
+    {
+      "id": 1,
+      "name": "Crystal Brooks",
+      "position": "Florist",
+      "image": "/images/expert/h3-team-img-1.png",
+      "createdDate": "2025-03-12T00:00:00",
+      "updatedDate": "2025-03-12T00:00:00",
+      "isDeleted": false
+    },
+    {
+      "id": 2,
+      "name": "Shirley Harris",
+      "position": "Manager",
+      "image": "/images/expert/h3-team-img-2.png",
+      "createdDate": "2025-03-12T00:00:00",
+      "updatedDate": "2025-03-12T00:00:00",
+      "isDeleted": false
+    },
+    {
+      "id": 3,
+      "name": "Beverly Clark",
+      "position": "Florist",
+      "image": "/images/expert/h3-team-img-3.png",
+      "createdDate": "2025-03-12T00:00:00",
+      "updatedDate": "2025-03-12T00:00:00",
+      "isDeleted": false
+    },
+    {
+      "id": 4,
+      "name": "Amanda Watkins",
+      "position": "Florist",
+      "image": "/images/expert/h3-team-img-4.png",
+      "createdDate": "2025-03-12T00:00:00",
+      "updatedDate": "2025-03-12T00:00:00",
+      "isDeleted": false
+    }
+  ],
+
+  "settings": [
+    {
+      "key": "Owner",
+      "value": "Powered by Roya Maharramova 2025"
+    },
+    {
+      "key": "Pay",
+      "value": "/images/footer/footer-bottom-1.png"
+    },
+    {
+      "key": "Logo",
+      "value": "/images/slider/h2-sign-img.png"
+    }
+  ],
+  "headerBackgrounds": [
+    {
+      "key": "Expert",
+      "value": "Flower Experts",
+      "description": "A perfect blend of creativity, energy, communication, happiness and love. Let us arrange a smile for you."
+    },
+    {
+      "key": "Blog",
+      "value": "From our Blog",
+      "description": "A perfect blend of creativity, energy, communication, happiness and love. Let us arrange a smile for you."
+    },
+    {
+      "key": "About",
+      "value": "We take flowers personally & we bring you happiness",
+      "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec."
+    },
+    {
+      "key": "Shop",
+      "value": "Product List",
+      "description": "Where flowers are our inspiration"
+    },
+    {
+      "key": "BlogSection",
+      "value": "Blog",
+      "description": "Where flowers are our inspiration"
+    },
+    {
+      "key": "Login",
+      "value": "My Account",
+      "description": "Where flowers are our inspiration"
+    },
+    {
+      "key": "ContactPageForm",
+      "value": "We take flowers personally, with your thoughts in hand…",
+      "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec."
+    },
+    {
+      "key": "BlogDetail",
+      "value": "Fiorello",
+      "description": "Where flowers are our inspiration"
+    }
+  ],
+  "sectionBackgrounds": [
+    {
+      "key": "HomSubscribe",
+      "value": "/images/subscribe/h3-background-img.jpg"
+    },
+    {
+      "key": "AboutBackground",
+      "value": "/images/about/backgroundAbout.jpg"
+    }
+  ],
+  "authors": [
+    {
+      "id": 1,
+      "name": "Shirley Burke"
+    },
+    {
+      "id": 2,
+      "name": "John Doe"
+    }
+  ],
+  "blogs": [
+    {
+      "id": 1,
+      "title": "Flower Power",
+      "description": "Class aptent taciti sociosqu ad litora torquent per conubia nostra, per",
+      "authorId": 1,
+      "createdDate": "2025-03-12T00:00:00"
+    },
+    {
+      "id": 2,
+      "title": "Local Florists",
+      "description": "Class aptent taciti sociosqu ad litora torquent per conubia nostra, per",
+      "authorId": 1,
+      "createdDate": "2025-03-12T00:00:00"
+    },
+    {
+      "id": 3,
+      "title": "Flower Beauty",
+      "description": "Class aptent taciti sociosqu ad litora torquent per conubia nostra, per",
+      "authorId": 1,
+      "createdDate": "2025-03-12T00:00:00"
+    },
+    {
+      "id": 4,
+      "title": "Only the best",
+      "description": "Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
+      "authorId": 1,
+      "createdDate": "2025-03-12T00:00:00"
+    },
+    {
+      "id": 5,
+      "title": "The Gift",
+      "description": "Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
+      "authorId": 1,
+      "createdDate": "2025-03-12T00:00:00"
+    },
+    {
+      "id": 6,
+      "title": "Say you care",
+      "description": "Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
+      "authorId": 1,
+      "createdDate": "2025-03-12T00:00:00"
+    },
+    {
+      "id": 8,
+      "title": "Say you care",
+      "description": "Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
+      "authorId": 1,
+      "createdDate": "2025-03-12T00:00:00"
+    }
+  ],
+  "blogImages": [
+    { "id": 7, "image": "/images/blog/blog-feature-img-1.jpg", "blogId": 1 },
+    { "id": 8, "image": "/images/blog/blog-feature-img-3.jpg", "blogId": 2 },
+    { "id": 10, "image": "/images/blog/blog-feature-img-4.jpg", "blogId": 3 },
+    { "id": 12, "image": "/images/blog/blog-feature-img-2.jpg", "blogId": 4 },
+    { "id": 13, "image": "/images/blog/blog-feature-img-5.jpg", "blogId": 5 },
+    { "id": 14, "image": "/images/blog/blog-feature-img-7.jpg", "blogId": 6 },
+    { "id": 14, "image": "/images/blog/blog-feature-img-7.jpg", "blogId": 8 }
+  ],
+  "say": [
+    {
+      "id": 1,
+      "image": "/images/say/testimonial-img-1.png",
+      "name": "Anna Barnes",
+      "text": "Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus lingua",
+      "position": "Florist"
+    },
+    {
+      "id": 2,
+      "image": "/images/say/testimonial-img-2.png",
+      "name": "Anna Barnes",
+      "text": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget.",
+      "position": "Florist"
+    }
+  ],
+  "instagram": [
+    { "id": 1, "image": "/images/instagram/instagram1.jpg" },
+    { "id": 2, "image": "/images/instagram/instagram2.jpg" },
+    { "id": 3, "image": "/images/instagram/instagram3.jpg" },
+    { "id": 4, "image": "/images/instagram/instagram4.jpg" },
+    { "id": 5, "image": "/images/instagram/instagram5.jpg" },
+    { "id": 6, "image": "/images/instagram/instagram6.jpg" }
+  ]
+}
